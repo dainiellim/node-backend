@@ -8,6 +8,7 @@ const PORT = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/', (req, res) => {
+    console.log(req.body);
     res.send(`
         <html>
             <body>
