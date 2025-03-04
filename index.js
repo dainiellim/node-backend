@@ -7,7 +7,6 @@ const PORT = 3000;
 // Middleware to parse x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// '/' route to handle form submission
 app.post('/', (req, res) => {
     res.send(`
         <html>
