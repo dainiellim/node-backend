@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.post('/', (req, res) => {
-    console.log(req.body);
+    console.log(req);
     res.send(`
         <html>
             <body>
