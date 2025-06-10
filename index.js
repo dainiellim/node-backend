@@ -6,10 +6,11 @@ const PORT = 3000;
 
 // Middleware to parse x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
 
 
 app.post('/', (req, res) => {
-    console.log(req);
+    console.log('received json data:', req.body);
     res.send(`
         <html>
             <body>
